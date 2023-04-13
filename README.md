@@ -12,12 +12,13 @@ a.	Use k-nearest neighbor, Naïve Bayes, logistic regression, SVM, and Random Fo
 b.	Compare the performance metrics of the classification algorithms.
 c.	Plot ROC graph for the algorithms 
 4.	Suggested a few possible ways to attract more customers to finish with purchasing.
-Dataset 
+
+# Dataset--------- 
 https://archive.ics.uci.edu/ml/datasets/Online+Shoppers+Purchasing+Intention+Dataset
-Phiona Nicole Tumbaga 
-Alberto Perez 
-Joey Rice <3
-Eric Chhour
-Jonathan Santos
-Hadi Al Lawati
-Abdullah Al Nahwi
+### Phiona Nicole Tumbaga 
+### Alberto Perez 
+### Joey Rice
+### Eric Chhour
+### Jonathan Santos
+### Hadi Al Lawati
+### Abdullah Al Nahwi
