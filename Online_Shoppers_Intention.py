@@ -7,11 +7,19 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
 df = pd.read_csv('online_shoppers_intention.csv')
 print(df.head())
+print(df.info())
+print(df.describe())
+print(df.isnull().sum())
 
-numerical_features = list(df.select_dtypes(include=['int64', 'float64']).columns)
-categorical_features = list(df.select_dtypes(include=['object']).columns)
-print(numerical_features)
-print(categorical_features)
+categorical_features = ['Month', 'OperatingSystems', 'Browser', 'Region', 'TrafficType', 'VisitorType']
+numerical_features = ['Administrative', 'Administrative_Duration', 'Informational', 'Informational_Duration',
+                      'ProductRelated', 'ProductRelated_Duration', 'BounceRates', 'ExitRates', 'PageValues',
+                      'SpecialDay', 'Weekend', 'Revenue']
+
+
+df['Weekend'] = df['Weekend'].astype(int)
+df['Revenue'] = df['Revenue'].astype(int)
+
 
 #handle missing values
 imputer = SimpleImputer(strategy='median')
