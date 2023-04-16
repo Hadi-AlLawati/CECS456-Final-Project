@@ -17,7 +17,7 @@ c.	Plot ROC graph for the algorithms
 https://archive.ics.uci.edu/ml/datasets/Online+Shoppers+Purchasing+Intention+Dataset
 ### Phiona Nicole Tumbaga 
 ### Alberto Perez 
-### Joey Rice
+### Joey Rice <3
 ### Eric Chhour
 ### Jonathan Santos
 ### Hadi Al Lawati
