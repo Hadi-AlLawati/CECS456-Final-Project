@@ -36,3 +36,13 @@ scaler = StandardScaler()
 df[numerical_features] = scaler.fit_transform(df[numerical_features])
 
 print(df.head())
+
+
+
+# run correlation matrix and plot
+f, ax = plt.subplots(figsize=(10, 8))
+corr = df.corr()
+sns.heatmap(corr, mask=np.zeros_like(corr, dtype=np.bool),
+            cmap=sns.diverging_palette(220, 10, as_cmap=True),
+            square=True, ax=ax)
+
