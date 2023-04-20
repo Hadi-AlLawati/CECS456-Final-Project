@@ -1,7 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
+
 import pandas as pd
 import seaborn as sns
+from seaborn import distplot
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
@@ -37,12 +39,17 @@ df[numerical_features] = scaler.fit_transform(df[numerical_features])
 
 print(df.head())
 
-
-
+#code reference 
+#https://medium.com/geekculture/feature-selection-in-machine-learning-correlation-matrix-univariate-testing-rfecv-1186168fac12
 # run correlation matrix and plot
 f, ax = plt.subplots(figsize=(10, 8))
 corr = df.corr()
 sns.heatmap(corr, mask=np.zeros_like(corr, dtype=np.bool),
             cmap=sns.diverging_palette(220, 10, as_cmap=True),
             square=True, ax=ax)
+
+#histogram , needs work
+distplot(df.head())
+# show plot
+plt.show()
 
